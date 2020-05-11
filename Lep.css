@@ -1,0 +1,276 @@
+html{
+    width:100%;
+    background-color: rgb(74, 119, 224);
+    scroll-behavior: smooth;
+    margin: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    min-height: 75vh;
+}
+
+.header{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    font-size: 5.8vh;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color:  rgb(74, 119, 224);
+    background-color: beige;
+    position: fixed;
+    width: 90%;
+}
+
+.philosophy{
+    font-size: 2.5vh;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 980px) { /*a mobilomon*/
+    body{
+        margin:0;
+        width: 100%;
+        padding:10px;
+    }
+    .header {
+	    background-color: red;
+        font-size: 4.5vh;
+        width:100%;
+        text-align: center;
+    }
+    .philosophy{
+        font-size: 2vh;
+    }
+
+    .navigation{
+        font-size: 1vmin;
+        min-width:13%;
+    }
+   
+}
+
+
+
+#mainSection{
+flex-direction: row;
+min-height:80vh;
+}
+
+
+/*NAVIGATION, MENU AREA*/
+.navigation{
+position: fixed;
+max-width: 13%;
+min-height: 30vh;
+padding: 2vh 2vmax 2vh 2vmin;
+background-color: honeydew;
+font-size: 3vmin;
+line-height: 1.6;
+border: none;
+cursor: pointer;
+margin-top: 16vh;
+}
+
+
+/* DROPDOWN MENU */
+.dropbtn:hover, .dropbtn:focus{
+    color: #a8a62b;
+    font-weight: bold;
+    background-color: #008900;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 0 1rem 0 1rem;
+    white-space:nowrap;
+  }
+
+
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #234562;
+    width: 120%;
+    overflow: auto;
+    z-index: 1;
+    font-size: 2.5vmin;
+        /* az alabbiak akadalyozzak meg a sortorest */
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 0 5%;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown a:hover {background-color: #ddd;}
+  
+  .show {display: block;}
+
+
+
+.mainBlock{
+    margin: 0 5% 0 20%;
+    font-size: 3vh;
+    top:20vh;
+}
+
+
+/* POSTS */
+#newNews{
+    visibility: visible;
+    display: block;
+    padding-top:16vh;
+}
+
+/*Typical days*/
+.typicalDays{
+    text-align: center;
+    font-size: 3vh;
+}
+
+th{
+    line-height: 9vmin;
+}
+
+tr{
+    line-height: 4vmin;
+}
+td:nth-child(1) {
+    width: 30%;
+    font-size: 2.5vh;
+    }
+
+td:nth-child(2) {
+    width: 70%;
+    font-size: 2.5vh;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.typicalTable{
+    color:rgb(5, 0, 0);
+    display: flex;
+    justify-content: center;
+}
+
+#typicalDayHinckleyID{
+    visibility: hidden;
+    display: none;
+}
+#typicalDayBurbageID{
+    visibility: hidden;
+    display: none;
+}
+#termsHinckleyID{
+    visibility: hidden;
+    display: none;
+}
+#termsBurbageID{
+    visibility: hidden;
+    display: none;
+}
+#openBurbageID{
+    visibility: hidden;
+    display: none;
+}
+#openHinckleyID{
+    visibility: hidden;
+    display: none;
+}
+#teamBurbageID{
+    visibility: hidden;
+    display: none;
+}
+#teamHinckleyID{
+    visibility: hidden;
+    display: none;
+}
+#teamForestschoolID{
+    visibility: hidden;
+    display: none;
+}
+
+
+
+
+/* TEAM */
+
+.teamMember{
+    display: flex;
+    /*justify-content: space-between;  --> ket sorban elternek a hatarok*/
+    font-size: 3vmin;
+}
+.role, .qualification{
+width: 40%;
+}
+
+.photo img{
+    max-width: 20vmin;
+    padding-top: 4vh;
+}
+.photo{
+    font-size: 3vmin;
+    font-weight: bold;
+    text-align: center;
+    max-width:20vmin;
+    margin-right: 1.5vmin;
+}
+
+/* OPENING HOURS */
+
+#openHinckleyID .typicalTable td, #openBurbageID .typicalTable td{ 
+    font-weight: bold;  
+    width:300px;
+}
+
+
+/*NEWSLETTERS*/
+iframe{
+    max-width: 100% !important;
+    width: 600vmax !important;
+    height: 80vh !important;  
+}
+
+#newsletterBurbageID{
+    border: none;
+    visibility: hidden;
+    display: none;
+}
+
+#newsletterHinckleyID{
+    border: none;
+    visibility: hidden;
+    display: none;
+}
+
+#newsletterForestschoolID{
+    border: none;
+    visibility: hidden;
+    display: none;
+}
+
+
+
+
+.footer{
+    min-height: 5vh;
+}
